@@ -3,11 +3,16 @@
 /* TOKENS UND UNITS */
 
 :root{
-    --bg: #DADDFF;
-    --bg-light: blue;
-    --text: black;
-    --hover: yellow;
-    --light: grey;
+    --light-lavender: #DADDFF;
+    --bg-light: #f8f8f8;
+    --text: rgb(12, 12, 12);
+    --lavendel: #8F98FF;
+    --dark-blue: #182A88;
+    --muted-blue:#5F6894;
+    --bright-orange: #FF7648;
+    --kanarien:#FFC278;
+    --muted-yellow:#FFE1BD;
+
 }
 
 *{
@@ -43,10 +48,11 @@ li {
 }
 
 li:hover{
-    color: rgb(56, 27, 141);
+    color: var(--lavendel);
     transition: all 1,5s ease 0,5s;
     text-decoration-line:none;
     font-weight: bold;
+    font-size: 17px;
 }
 
 button {
@@ -57,7 +63,8 @@ button {
     border-style: none;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    transition: rgb(56, 27, 141), 0.2s;
+    transition: var(--lavendel);
+    color: text;
 }
 
 
@@ -68,7 +75,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 10px 10%;
-    background-color: #f8f8f8;
+    background-color: var(--bg-light);
     
 }
 
@@ -81,19 +88,22 @@ header .logo {
 input {
     margin-left: 20px;
     padding: 7px 9px;
-    background-color: #DADDFF;
+    background-color: var(--light-lavender);
     border-radius: 50px;
     border-style: none;
     cursor: text;
     transition: all 0.3s ease 0s;
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 input:hover {
-    color: rgb(56, 27, 141);
+    background-color: var(--lavendel);
 }
 
+::-webkit-input-placeholder{
+    color: var(--text);
+}
 
 /* CONTENT BEREICH */
 
@@ -124,26 +134,31 @@ input:hover {
     width: 200px;
     font-weight: bold;
     padding:10px;
-    color: rgb(0, 0, 0);
-    border:0px solid rgb(0, 0, 0);
+    color: var(--text);
+    border:0px var(--lavendel);
     border-radius: 30px;
     text-align: center;
     outline: none;
     text-decoration: none;
-    background-color: var(--bg);
+    background-color: var(--lavendel);
 
     box-shadow:rgb(20, 20, 20) 10px 10px 20px -10px;
 }
 
+.button:hover{
+    background-color: var(--text);
+    color: var(--lavendel)
+}
+
 /* FOOTER BEREICH */
 footer {
-    background-color: var(--bg);
+    background-color: var(--light-lavender);
     line-height: 24px;
     color: var(--text);
 }
 
 footer .footer-nav {
-    background-color: var(--bg);
+    background-color: var(--light-lavender)
     padding-top: 48px;
     padding:16px;
 }
@@ -175,7 +190,7 @@ footer .inhalt a{
 }
 
 footer .inhalt a:hover{
-    color:rgb(56, 27, 141);
+    color: var(--dark-blue);
     text-decoration-line:underline;
 }
 
@@ -192,7 +207,7 @@ footer .social i {
     font-size: 32px;
     padding: 12px;
     text-align: center;
-    color: black;
+    color: var(--text);
     width: 100%;
 }
 
