@@ -167,10 +167,84 @@ input:hover {
     color: var(--text);
     height: auto;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     background-color: var(--bg-light);
     
 }
+
+.teaser-cards {
+    position: relative;
+    width: auto;
+    padding-top: 0px;
+    padding-bottom:90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--bg-light);
+}
+
+.teaser-cards .card {
+    position: relative;
+    width: 300px;
+    height: 440px;
+    background-color: var(--light-lavender);
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:rgb(20, 20, 20) 10px 10px 20px -20px;
+    transition: 0,5s;
+}
+
+.teaser-cards .card .überschrift {
+    text-align: left;
+    padding-top: 40px;
+    margin-left: 40px;
+
+}
+
+.teaser-cards .card .card-inhalt-überschrift {
+    position: relative;
+    bottom: 10px;
+    text-align: left;
+    color: var(--text);
+    padding-bottom: 10px;
+    margin-left: 40px;
+    padding-top: 20px;
+    font-weight: 100;
+    
+}
+
+.teaser-cards .card .card-inhalt {
+    position: relative;
+    bottom: 10px;
+    text-align: left;
+    color: var(--text);
+    padding-bottom: 10px;
+    margin-left: 0px;
+    padding-top: 0px;
+}
+
+
+.teaser-cards .card .card-inhalt-überschrift a {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    background: var(--lavendel);
+    color: var(--text);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    
+}
+
+.teaser-cards .card .card-inhalt-überschrift a:hover{
+    background-color: var(--text);
+    color: var(--lavendel)
+}
+
 
 /* FOOTER BEREICH */
 footer {
