@@ -240,7 +240,7 @@ input:hover {
     
 }
 
-.teaser-cards .card .card-inhalt-überschrift a:hover{
+.card-inhalt-überschrift a:hover{
     background-color: var(--text);
     color: var(--lavendel)
 }
