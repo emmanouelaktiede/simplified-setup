@@ -107,7 +107,7 @@ input:hover {
 
 /* CONTENT BEREICH */
 
-.img-container {
+.heroteaser {
     background-image:url(../simplified-setup/img/heroteaser3.svg);
     width:auto;
     height: 600px;
@@ -118,7 +118,7 @@ input:hover {
     
 }
 
-.inner-container{
+.heroteaser-inhalt{
     margin-left: 150px;
     text-align: left;
     position: absolute;
