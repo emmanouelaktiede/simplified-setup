@@ -188,7 +188,7 @@ input:hover {
     position: relative;
     width: 300px;
     height: 440px;
-    background-color: var(--light-lavender);
+    background-color: var(--muted-yellow);
     margin: 20px;
     border-radius: 20px;
     overflow: hidden;
@@ -230,7 +230,7 @@ input:hover {
     position: relative;
     display: inline-block;
     padding: 10px;
-    background: var(--lavendel);
+    background: var(--kanarien);
     color: var(--text);
     border-radius: 50px;
     text-decoration: none;
@@ -240,9 +240,9 @@ input:hover {
     
 }
 
-.card-inhalt-überschrift a:hover{
-    background-color: var(--text);
-    color: var(--lavendel)
+.teaser-cards .card .card-inhalt-überschrift a:hover{
+    background-color: var(--bright-orange);
+    color: var(--muted-yellow);
 }
 
 
