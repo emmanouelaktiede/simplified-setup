@@ -245,6 +245,38 @@ input:hover {
     color: var(--muted-yellow);
 }
 
+/* Kontaktaufnahme */
+
+.kontaktaufnahme {
+    text-align: center;
+    position:relative;
+    width: 100%;
+    color: var(--text);
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background-color: var(--muted-yellow);
+    padding-bottom: 80px;
+}
+
+.kontaktaufnahme .kontakt-button a{
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    background: var(--kanarien);
+    color: var(--text);
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+}
+
+.kontaktaufnahme .kontakt-button a:hover{
+    background-color: var(--bright-orange);
+    color: var(--muted-yellow);
+}
 
 /* FOOTER BEREICH */
 footer {
