@@ -41,19 +41,21 @@ h3{
 a {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  text-decoration:none;
+  color: var(--text);
 }
 
 li {
     font-family: "Montserrat";
     font-weight: 500;
     font-size: 16px;
-    color: rgb(19, 19, 19);
+    color: text;
     text-decoration: none;
     list-style: none;
     padding: 0px 20px;
-    cursor: unset;
     display: inline-block;
 }
+
 
 li:hover{
     color: var(--lavendel);
@@ -61,18 +63,6 @@ li:hover{
     text-decoration-line:none;
     font-weight: bold;
     font-size: 17px;
-}
-
-button {
-    padding: 5px 15px;
-    margin-left: 7px;
-    background-color:var(--bg-light);
-    border-radius: 50px;
-    border-style: none;
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    transition: var(--lavendel);
-    
 }
 
 
@@ -87,6 +77,25 @@ header {
     
 }
 
+.navigation {
+    color: var(--text);
+}
+
+a:link {
+    color: var(--bright-orange);
+}
+
+a:visited{
+    color: var(--text);
+}
+
+a:active {
+    color: var(--lavendel);
+}
+
+a:hover {
+    color: var(--lavendel);
+}
 header .logo {
     cursor: pointer;
     margin-right: auto;
@@ -102,7 +111,7 @@ input {
     cursor: text;
     transition: all 0.3s ease 0s;
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 input:hover {
@@ -111,6 +120,18 @@ input:hover {
 
 ::-webkit-input-placeholder{
     color: var(--text);
+}
+
+button {
+    padding: 5px 15px;
+    margin-left: 7px;
+    background-color:var(--bg-light);
+    border-radius: 50px;
+    border-style: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    transition: var(--lavendel);
+    
 }
 
 /* CONTENT BEREICH */
