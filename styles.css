@@ -191,8 +191,8 @@ input:hover {
     width: 100%;
     color: var(--text);
     height: auto;
-    padding-top: var(--unit-m)
-    padding-bottom: var(--unit-s);
+    padding-top: var(--unit-m);
+    padding-bottom: var(--unit-xs);
     background-color: var(--bg-light);
     
 }
