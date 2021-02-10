@@ -380,6 +380,8 @@ input:hover {
     align-items: center;
     flex-wrap: wrap;
     background-color: var(--bg-light);
+    padding-top: var(--unit-m);
+    padding-bottom: var(--unit-m);
 }
 
 .portfolio-overview .portfolio-bild {
@@ -390,7 +392,7 @@ input:hover {
 }
 
 .portfolio-overview .portfolio-bild .portfolio-bild1 {
-    background-image: url(bild6.jpg);
+    background-image: url(postkarte.jpg);
     width: 221px;
     height: 216px;
     background-repeat: no-repeat;
@@ -519,4 +521,223 @@ footer .logo{
     padding-bottom: 30px;
     background-color: var(--muted-yellow);
     padding-bottom: 80px;
+}
+
+/* Über mich */
+
+.über-mich{
+    background-color: var(--bg-light);
+    padding-bottom: var(--unit-m);
+    padding-top: var(--unit-s);
+    text-align: center;
+    position:relative;
+    width: 100%;
+}
+
+.über-mich-seite {
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--bg-light);
+    padding-bottom:auto;
+}
+
+.über-mich-seite .über-mich-seite-bild {
+    position: relative;
+    margin: var(--unit-xs);
+}
+
+.über-mich-seite .über-mich-seite-bild .über-mich-seite-bild1 {
+    background-image: url(bild2.jpg);
+    width: 450px;
+    height: 374px;
+    background-repeat: no-repeat;
+}
+
+.über-mich-seite .über-mich-seite-bild .über-mich-seite-bild2 {
+    background-image: url(bild2.jpg);
+    width: 450px;
+    height: 374px;
+    background-repeat: no-repeat;
+}
+
+.über-mich-seite .über-mich-seite-bild .über-mich-seite-bild3 {
+    background-image: url(bild2.jpg);
+    width: 450px;
+    height: 374px;
+    background-repeat: no-repeat;
+}
+
+.über-mich-button a{
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    padding: var(--unit-xs);
+    background: var(--kanarien);
+    color: var(--text);
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.über-mich-button a:hover{
+    background-color: var(--bright-orange);
+    color: var(--muted-yellow);
+}
+
+/* Kontaktseite */
+
+/* Heroteaser */
+.heroteaser-kontakt {
+    background-image: url(heroteaser3.svg);
+    width:auto;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.heroteaser-kontakt-inhalt{
+    margin-left: 150px;
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    color: var(--text);
+    height: auto;
+    margin-top: 200px;
+}
+
+.rezensionen {
+    text-align: center;
+    position:relative;
+    width: 100%;
+    color: var(--text);
+    height: auto;
+    padding-top: var(--unit-m);
+    background-color: var(--muted-yellow);
+    padding-bottom: var(--unit-m);
+    font-style: oblique;
+}
+
+.rezensionen .rezensionen-überschrift {
+    font-style: normal;
+}
+
+.rezensionen .rezensionen-button a{
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    padding: var(--unit-xs);
+    background: var(--kanarien);
+    color: var(--text);
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.rezensionen .rezensionen-button a:hover{
+    background-color: var(--bright-orange);
+    color: var(--muted-yellow);
+}
+
+
+
+/* Portfolioseite */
+
+/* Navigation Portfolio */
+
+.navigation-portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--unit-m);
+    background-color: var(--bg-light);
+    
+}
+
+.navigation-portfolio li {
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: text;
+    text-decoration: none;
+    list-style: none;
+    padding: 0px 20px;
+    display: inline-block;
+    padding-bottom: var(--unit-s);
+}
+
+.portfolio-seite {
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--bg-light);
+    padding-bottom:auto;
+}
+
+.portfolio-seite .portfolio-seite-bild {
+    position: relative;
+    margin: var(--unit-xs);
+}
+
+.portfolio-seite .portfolio-seite-bild .portfolio-seite-bild1 {
+    background-image: url(bild2.jpg);
+    width: 348px;
+    height: 348px;
+    background-repeat: no-repeat;
+}
+
+.portfolio-seite .portfolio-seite-bild .portfolio-seite-bild2 {
+    background-image: url(bild2.jpg);
+    width: 348px;
+    height: 348px;
+    background-repeat: no-repeat;
+}
+
+.portfolio-seite .portfolio-seite-bild .portfolio-seite-bild3 {
+    background-image: url(bild2.jpg);
+    width: 348px;
+    height: 348px;
+    background-repeat: no-repeat;
+}
+
+.portfolio-seite-button{
+    background-color: var(--bg-light);
+    padding-bottom: var(--unit-m);
+    padding-top: var(--unit-s);
+    text-align: center;
+    position:relative;
+    width: 100%;
+}
+.portfolio-button a{
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    padding: var(--unit-xs);
+    background: var(--kanarien);
+    color: var(--text);
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.portfolio-button a:hover{
+    background-color: var(--bright-orange);
+    color: var(--muted-yellow);
 }
