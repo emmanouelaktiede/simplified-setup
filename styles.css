@@ -12,13 +12,23 @@
     --bright-orange: #FF7648;
     --kanarien:#FFC278;
     --muted-yellow:#FFE1BD;
-
+    --unit-xs:10px;
+    --unit-s:30px;
+    --unit-m:90px;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+li {
+   font-family: "Montserrat";
+   font-weight: 500;
+   font-size: 16px;
+   color: text;
+   line-height: 29px;
 }
 
 h1 {
@@ -34,7 +44,7 @@ h3{
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     font-weight:normal;
-    padding-top: 30px;
+    padding-top: var(--unit-s);
     line-height: 29px;
 }
 
@@ -45,7 +55,18 @@ a {
   color: var(--text);
 }
 
-li {
+
+/* HEADER BEREICH */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: var(--unit-xs) 10%;
+    background-color: var(--bg-light);
+    
+}
+header li {
     font-family: "Montserrat";
     font-weight: 500;
     font-size: 16px;
@@ -57,24 +78,12 @@ li {
 }
 
 
-li:hover{
+header li:hover{
     color: var(--lavendel);
     transition: all 1,5s ease 0,5s;
     text-decoration-line:none;
     font-weight: bold;
     font-size: 17px;
-}
-
-
-/* HEADER BEREICH */
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 10%;
-    background-color: var(--bg-light);
-    
 }
 
 .navigation {
@@ -157,10 +166,10 @@ input:hover {
     display: inline-block;
     width: 200px;
     font-weight: bold;
-    padding:10px;
+    padding:var(--unit-xs);
     color: var(--text);
     border:0px var(--lavendel);
-    border-radius: 30px;
+    border-radius: var(--unit-m);
     text-align: center;
     outline: none;
     text-decoration: none;
@@ -182,8 +191,8 @@ input:hover {
     width: 100%;
     color: var(--text);
     height: auto;
-    padding-top: 100px;
-    padding-bottom: 30px;
+    padding-top: var(--unit-m)
+    padding-bottom: var(--unit-s);
     background-color: var(--bg-light);
     
 }
@@ -192,7 +201,7 @@ input:hover {
     position: relative;
     width: auto;
     padding-top: 0px;
-    padding-bottom:90px;
+    padding-bottom:var(--unit-m);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,10 +230,10 @@ input:hover {
 
 .teaser-cards .card .card-inhalt-überschrift {
     position: relative;
-    bottom: 10px;
+    bottom: var(--unit-xs);
     text-align: left;
     color: var(--text);
-    padding-bottom: 10px;
+    padding-bottom: var(--unit-xs);
     margin-left: 40px;
     padding-top: 20px;
     font-weight: 100;
@@ -233,7 +242,7 @@ input:hover {
 
 .teaser-cards .card .card-inhalt {
     position: relative;
-    bottom: 10px;
+    bottom: var(--unit-xs);
     text-align: left;
     color: var(--text);
     padding-bottom: 10px;
@@ -245,7 +254,7 @@ input:hover {
 .teaser-cards .card .card-inhalt-überschrift a {
     position: relative;
     display: inline-block;
-    padding: 10px;
+    padding: var(--unit-xs);
     background: var(--kanarien);
     color: var(--text);
     border-radius: 50px;
@@ -266,8 +275,8 @@ input:hover {
 .letzten-projekte {
     position: relative;
     width: auto;
-    padding-top: 0px;
-    padding-bottom:90px;
+    padding-top: var(--unit-m);
+    padding-bottom:var(--unit-m);
     display: flex;
     justify-content:left;
     align-items:center;
@@ -287,7 +296,7 @@ input:hover {
     height: 554px;
     background-position:center;
     background-repeat: no-repeat;
-    margin-left: 30px;
+    margin-left: var(--unit-s);
 }
 
 .letzten-projekte .bild2 {
@@ -298,7 +307,36 @@ input:hover {
     background-repeat: no-repeat;
     background-size:auto;
     position: relative;
-    margin-left: 30px;
+    margin-left: var(--unit-s);
+}
+
+/* Besonderheiten und Vorteile */
+
+.besonderheiten-vorteile {
+    position: relative;
+    width: auto;
+    padding-top: var(--unit-m);
+    padding-bottom:var(--unit-m);
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    flex-wrap: wrap;
+    background-color: var(--bg-light);
+}
+
+.vorteile-bild {
+    background-image: url(bild6.jpg);
+    width: 591px;
+    height: 571px;
+    background-position:center;
+    background-repeat: no-repeat;
+    margin-left: 150px;
+}
+
+.vorteile-inhalt{
+    margin-left: 150px;
+    text-align: left;
+    width: 30%;
 }
 
 /* Kontaktaufnahme */
@@ -309,17 +347,16 @@ input:hover {
     width: 100%;
     color: var(--text);
     height: auto;
-    padding-top: 100px;
-    padding-bottom: 30px;
+    padding-top: var(--unit-m);
     background-color: var(--muted-yellow);
-    padding-bottom: 80px;
+    padding-bottom: var(--unit-m);
 }
 
 .kontaktaufnahme .kontakt-button a{
     margin-top: 20px;
     position: relative;
     display: inline-block;
-    padding: 10px;
+    padding: var(--unit-xs);
     background: var(--kanarien);
     color: var(--text);
     border-radius: 50px;
@@ -334,6 +371,80 @@ input:hover {
     color: var(--muted-yellow);
 }
 
+/* Portfolio Overview*/
+.portfolio-overview {
+    position: relative;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--bg-light);
+}
+
+.portfolio-overview .portfolio-bild {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: var(--unit-xs);
+}
+
+.portfolio-overview .portfolio-bild .portfolio-bild1 {
+    background-image: url(bild6.jpg);
+    width: 221px;
+    height: 216px;
+    background-repeat: no-repeat;
+}
+
+.portfolio-overview .portfolio-überschrift1 {
+    margin-top: 20px;
+}
+
+.portfolio-overview .portfolio-bild .portfolio-bild2 {
+    background-image: url(bild6.jpg);
+    width: 221px;
+    height: 216px;
+    background-repeat: no-repeat;
+}
+
+.portfolio-overview .portfolio-überschrift2 {
+    margin-top: 20px;
+}
+
+.portfolio-overview .portfolio-bild .portfolio-bild3 {
+    background-image: url(bild6.jpg);
+    width: 221px;
+    height: 216px;
+    background-repeat: no-repeat;
+}
+
+.portfolio-overview .portfolio-überschrift3 {
+    margin-top: 20px;
+}
+
+.portfolio-overview .portfolio-bild .portfolio-bild4 {
+    background-image: url(bild6.jpg);
+    width: 221px;
+    height: 216px;
+    background-repeat: no-repeat;
+}
+
+.portfolio-overview .portfolio-überschrift4 {
+    margin-top: 20px;
+}
+
+.portfolio-overview .portfolio-bild .portfolio-bild5 {
+    background-image: url(bild6.jpg);
+    width: 221px;
+    height: 216px;
+    background-repeat: no-repeat;
+}
+
+.portfolio-overview .portfolio-überschrift5 {
+    margin-top: 20px;
+}
+
+
 /* FOOTER BEREICH */
 footer {
     background-color: var(--light-lavender);
@@ -343,8 +454,7 @@ footer {
 
 footer .footer-nav {
     background-color: var(--light-lavender);
-    padding-top: 48px;
-    padding:16px;
+    padding-bottom: var(--unit-xs);
 }
 
 footer .inhalt{
@@ -367,7 +477,7 @@ footer h2 {
 
 footer .inhalt a{
     display: block;
-    padding-bottom: 10px;
+    padding-bottom: var(--unit-xs);
     color: var(--text);
     opacity: 0.65;
     text-decoration: none;
@@ -376,23 +486,6 @@ footer .inhalt a{
 footer .inhalt a:hover{
     color: var(--dark-blue);
     text-decoration-line:underline;
-}
-
-
-footer .social {
-    margin-block: 16px;
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 16px;
-    color: white;
-}
-
-footer .social i {
-    font-size: 32px;
-    padding: 12px;
-    text-align: center;
-    color: var(--text);
-    width: 100%;
 }
 
 footer .notice {
