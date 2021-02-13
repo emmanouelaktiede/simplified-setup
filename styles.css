@@ -374,6 +374,7 @@ input:hover {
 }
 
 /* Portfolio Overview*/
+
 .portfolio-overview {
     position: relative;
     width: auto;
@@ -518,6 +519,7 @@ footer .logo{
 }
 
 /* Suchergebnisse */
+
 .suchergebnisse {
     text-align: center;
     position:relative;
@@ -574,9 +576,8 @@ footer .logo{
     background-image: url(uebermich.jpeg);
     width: 830px;
     height: 600px;
-    background-position:right;
+    background-position:center;
     background-repeat: no-repeat;
-    background-size:auto;
     position: relative;
     background-size: cover;
     margin-left: var(--unit-s);
