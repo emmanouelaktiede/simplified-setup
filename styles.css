@@ -572,18 +572,19 @@ footer .logo{
     width: 30%;
 }
 
-.ueber-mich-bild {
+.ueber-mich-header-bild {
     background-image: url(uebermich.jpeg);
-    width: 830px;
-    height: 600px;
-    background-position:center;
+    width: 750px;
+    height: 500px;
     background-repeat: no-repeat;
-    position: relative;
     background-size: cover;
-    margin-left: var(--unit-s);
-}
-.ueber-mich-seite .über-mich-seite-bild {
     position: relative;
+    background-position: center;
+    margin-left: var(--unit-s);
+
+}
+
+.ueber-mich-seite .ueber-mich-seite-bild {
     margin: var(--unit-xs);
 }
 
