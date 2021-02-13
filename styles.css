@@ -222,14 +222,14 @@ input:hover {
     transition: 0,5s;
 }
 
-.teaser-cards .card .überschrift {
+.teaser-cards .card .ueberschrift {
     text-align: left;
     padding-top: 40px;
     margin-left: 40px;
 
 }
 
-.teaser-cards .card .card-inhalt-überschrift {
+.teaser-cards .card .card-inhalt-ueberschrift {
     position: relative;
     bottom: var(--unit-xs);
     text-align: left;
@@ -326,12 +326,13 @@ input:hover {
 }
 
 .vorteile-bild {
-    background-image: url(bild6.jpg);
+    background-image: url(bild-homepage.jpg);
     width: 591px;
     height: 571px;
     background-position:center;
     background-repeat: no-repeat;
     margin-left: 150px;
+    background-size: cover;
 }
 
 .vorteile-inhalt{
@@ -393,57 +394,62 @@ input:hover {
 }
 
 .portfolio-overview .portfolio-bild .portfolio-bild1 {
-    background-image: url(postkarte.jpg);
+    background-image: url(portfolio-bild-logo.jpg);
     width: 221px;
     height: 216px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.portfolio-overview .portfolio-überschrift1 {
+.portfolio-overview .portfolio-ueberschrift1 {
     margin-top: 20px;
 }
 
 .portfolio-overview .portfolio-bild .portfolio-bild2 {
-    background-image: url(bild6.jpg);
+    background-image: url(portfolio-bild-4.png);
+    background-size: cover;
     width: 221px;
     height: 216px;
     background-repeat: no-repeat;
 }
 
-.portfolio-overview .portfolio-überschrift2 {
+.portfolio-overview .portfolio-ueberschrift2 {
     margin-top: 20px;
 }
 
 .portfolio-overview .portfolio-bild .portfolio-bild3 {
-    background-image: url(bild6.jpg);
+    background-image: url(portfolio-bild-7.png);
+    background-size: cover;
     width: 221px;
     height: 216px;
     background-repeat: no-repeat;
 }
 
-.portfolio-overview .portfolio-überschrift3 {
+.portfolio-overview .portfolio-ueberschrift3 {
     margin-top: 20px;
 }
 
 .portfolio-overview .portfolio-bild .portfolio-bild4 {
-    background-image: url(bild6.jpg);
+    background-image: url(portfolio-bild-8.png);
     width: 221px;
     height: 216px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.portfolio-overview .portfolio-überschrift4 {
+.portfolio-overview .portfolio-ueberschrift4 {
     margin-top: 20px;
 }
 
 .portfolio-overview .portfolio-bild .portfolio-bild5 {
-    background-image: url(bild6.jpg);
+    background-image: url(portfolio-bild-5.png);
     width: 221px;
     height: 216px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.portfolio-overview .portfolio-überschrift5 {
+.portfolio-overview .portfolio-ueberschrift5 {
     margin-top: 20px;
 }
 
@@ -518,15 +524,14 @@ footer .logo{
     width: 100%;
     color: var(--text);
     height: auto;
-    padding-top: 100px;
-    padding-bottom: 30px;
+    padding-top: 250px;
     background-color: var(--muted-yellow);
-    padding-bottom: 80px;
+    padding-bottom: 250px;
 }
 
 /* Über mich */
 
-.über-mich{
+.ueber-mich{
     background-color: var(--bg-light);
     padding-bottom: var(--unit-m);
     padding-top: var(--unit-s);
@@ -535,7 +540,7 @@ footer .logo{
     width: 100%;
 }
 
-.über-mich-seite {
+.ueber-mich-seite {
     position: relative;
     width: auto;
     display: flex;
@@ -546,33 +551,66 @@ footer .logo{
     padding-bottom:auto;
 }
 
-.über-mich-seite .über-mich-seite-bild {
+
+.ueber-mich-einleitung{
+    position: relative;
+    width: auto;
+    padding-top: var(--unit-s);
+    padding-bottom:var(--unit-m);
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    flex-wrap: wrap;
+    background-color: var(--bg-light);
+}
+
+.ueber-mich-inhalt {
+    margin-left: 150px;
+    text-align: left;
+    width: 30%;
+}
+
+.ueber-mich-bild {
+    background-image: url(uebermich.jpeg);
+    width: 830px;
+    height: 600px;
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size:auto;
+    position: relative;
+    background-size: cover;
+    margin-left: var(--unit-s);
+}
+.ueber-mich-seite .über-mich-seite-bild {
     position: relative;
     margin: var(--unit-xs);
 }
 
-.über-mich-seite .über-mich-seite-bild .über-mich-seite-bild1 {
-    background-image: url(bild2.jpg);
+.ueber-mich-seite .ueber-mich-seite-bild .ueber-mich-seite-bild1 {
+    background-image: url(portfolio-bild-2.jpg);
     width: 450px;
     height: 374px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.über-mich-seite .über-mich-seite-bild .über-mich-seite-bild2 {
-    background-image: url(bild2.jpg);
+.ueber-mich-seite .ueber-mich-seite-bild .ueber-mich-seite-bild2 {
+    background-image: url(portfolio-bild-5.png);
     width: 450px;
     height: 374px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.über-mich-seite .über-mich-seite-bild .über-mich-seite-bild3 {
-    background-image: url(bild2.jpg);
+.ueber-mich-seite .ueber-mich-seite-bild .ueber-mich-seite-bild3 {
+    background-image: url(portfolio-bild-9.png);
     width: 450px;
     height: 374px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
-.über-mich-button a{
+.ueber-mich-button a{
     margin-top: 20px;
     position: relative;
     display: inline-block;
@@ -587,7 +625,7 @@ footer .logo{
     font-style: normal;
 }
 
-.über-mich-button a:hover{
+.ueber-mich-button a:hover{
     background-color: var(--bright-orange);
     color: var(--muted-yellow);
 }
@@ -596,7 +634,7 @@ footer .logo{
 
 /* Heroteaser */
 .heroteaser-kontakt {
-    background-image: url(heroteaser3.svg);
+    background-image: url(header-bild-2.svg);
     width:auto;
     height: 300px;
     background-position: center;
@@ -628,7 +666,7 @@ footer .logo{
     font-style: oblique;
 }
 
-.rezensionen .rezensionen-überschrift {
+.rezensionen .rezensionen-ueberschrift {
     font-style: normal;
 }
 
@@ -667,6 +705,7 @@ footer .logo{
     
 }
 
+
 .navigation-portfolio li {
     font-family: "Montserrat";
     font-size: 16px;
@@ -677,7 +716,27 @@ footer .logo{
     display: inline-block;
     padding-bottom: var(--unit-s);
 }
+/* Heroteaser */
+.heroteaser-portfolio {
+    background-image: url(header-bild-4.svg);
+    width:auto;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
 
+.heroteaser-portfolio-inhalt{
+    margin-left: 150px;
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    color: var(--text);
+    height: auto;
+    margin-top: 200px;
+}
 .portfolio-seite {
     position: relative;
     width: auto;
@@ -695,23 +754,26 @@ footer .logo{
 }
 
 .portfolio-seite .portfolio-seite-bild .portfolio-seite-bild1 {
-    background-image: url(bild2.jpg);
+    background-image: url(portfolio-bild-1.png);
     width: 348px;
     height: 348px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .portfolio-seite .portfolio-seite-bild .portfolio-seite-bild2 {
-    background-image: url(bild2.jpg);
+    background-image: url(portfolio-bild-2.jpg);
     width: 348px;
     height: 348px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .portfolio-seite .portfolio-seite-bild .portfolio-seite-bild3 {
-    background-image: url(bild2.jpg);
+    background-image: url(portfolio-bild-3.png);
     width: 348px;
     height: 348px;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
